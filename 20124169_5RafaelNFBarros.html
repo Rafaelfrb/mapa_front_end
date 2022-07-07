@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+    
+        .title {
+            background-color: #015371;
+            border: 1px solid #000000;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        
+        h3 {
+            color: #ffffff;
+            text-align: center;
+            margin-top: 3px;
+
+        }
+
+        #headerform {
+            font-size: 18px;
+            margin: 25px;
+
+        }
+
+        .col-4 {
+            margin-top: 100px;
+        }
+
+        #floatingPassword {
+            margin-top: 5px;
+        }
+
+        #btn-w {
+            margin-top: 4px;
+        }
+
+        #lembrete-cadastro {
+            height: 50px;
+            background-color: #cdcaca;
+            border: 1px solid #015a7a;
+            border-radius: 10px;
+        }
+
+        .h6 {
+            padding: 1px;
+            margin-left: 5px;
+        }
+
+        .w-10 {
+            padding: 2px;
+        }
+
+        #perdeu-senha {
+            margin-left: 10px;
+        }
+
+        .container {
+            text-align: center;
+        }
+    </style>
+    <title>Mapa Front end</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <header class="title">
+                    <h3>Mapa Front End</h3>
+                </header>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <main class="form-signin w-100 m-auto">
+                        <form>
+                            <h1 class="h3 mb-3 fw-normal" id="headerform">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Por favor, inscreva-se</font>
+                                </font>
+                            </h1>
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="nome@exemplo.com">
+                                <label for="floatingInput">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Endereço de email</font>
+                                    </font>
+                                </label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
+                                <label for="floatingPassword">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Senha</font>
+                                    </font>
+                                </label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
+                                <label for="floatingPassword">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Repetir Senha</font>
+                                    </font>
+                                </label>
+                            </div>
+                            <button class="w-100 btn btn-lg btn-primary" type="submit" id="btn-w">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Cadastrar</font>
+                                </font>
+                            </button>
+                        </form>
+                    </main>
+                </div>
+                <div class="col-md-4">
+                    <main class="form-signin w-100 m-auto">
+                        <form>
+                            <h1 class="h3 mb-3 fw-normal" id="headerform">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Formulário de Autenticação de Usuário</font>
+                                </font>
+                            </h1>
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="nome@exemplo.com">
+                                <label for="floatingInput">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Informe seu Login</font>
+                                    </font>
+                                </label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
+                                <label for="floatingPassword">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Informe sua Senha</font>
+                                    </font>
+                                </label>
+                            </div>
+                            <div class="checkbox mb-3">
+                                <label>
+                                    <input type="checkbox" value="remember-me">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Lembre de mim
+                                        </font>
+                                    </font>
+                                </label>
+                                <div id="lembrete-cadastro">
+                                    <h6 class="h6">Ainda não tem conta?
+                                        <button class="w-10 btn btn-lg btn-primary" type="submit" id="btn-w">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Cadastrar</font>
+                                            </font>
+                                        </button>
+                                    </h6>
+                                </div>
+                            </div>
+                            <h6 id="perdeu-senha" class="rounded-5">Perdeu a Senha?</h6>
+                            <button class="w-100 btn btn-lg btn-primary" type="submit" id="btn-w">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Logar</font>
+                                </font>
+                            </button>
+                        </form>
+                    </main>
+                </div>
+                <div class="col-md-4">
+                    <main class="form-signin w-100 m-auto">
+                        <form>
+                            <h1 class="h3 mb-3 fw-normal" id="headerform">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Lembrar senha de usuário</font>
+                                </font>
+                            </h1>
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="floatingInput"
+                                    placeholder="nome@exemplo.com">
+                                <label for="floatingInput">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Informe seu email cadastrado</font>
+                                    </font>
+                                </label>
+                            </div>
+                            <div class="checkbox mb-3">
+                            </div>
+                            <button class="w-100 btn btn-lg btn-primary" type="submit" id="btn-w">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Enviar</font>
+                                </font>
+                            </button>
+                        </form>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <span class="text-muted">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;"><br></br>
+                        <hr>
+                        </hr>Rafael do Nascimento Freitas Barros RA 20124169-5
+                    </font>
+                </font>
+            </span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+</html>
